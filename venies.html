@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href ="./home.html">
+-            <img src="it.svg" alt="logo" width="140" height="110">
+        </a>
+        <ul>
+            <li> <a href="./home.html">Home</a> </li>
+            <li> <a href="#home">About</a> </li>
+            <li> <a href="./contact.html">Contact</a> </li>
+            <li class="dropdown">
+                <a href="./home.html#venice-image">Gallery</a>
+                <div class="dropdown-content">
+                <a href="./home.html#venice-image">Venice</a>
+                <a href="./home.html#cinque-image">Cinque Terre</a>
+                <a href="./home.html#dolomites-image">Dolomites</a>
+        </ul>
+    </nav>
+
+    <section class ="hero" id="home">
+        <div class="hero-content">
+            <h1>Venice</h1>
+            <p></p>
+        </div>
+    </section>
+
+    <article class ="about" id="about">
+        <h2>About</h2>
+        <p>nce a powerful maritime republic, Venice has been a center of art, architecture, and culture for centuries. From the iconic St. Mark’s Square and its grand basilica to the quiet, romantic corners away from the crowds, every part of the city tells a story of its glorious past.</p>
+    </article>
+
+    <!-- Первая секция: Фото слева, текст справа -->
+    <div class="content-row" id="venice-image">
+        <div class="content-image">
+                <img src="venies\5.jpg" alt="Venice5">
+        </div>
+        <div class="content-text">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d727.3364087225546!2d12.335149244459542!3d45.440071088888764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1dc99779e19%3A0x4f24f83aaed7e84b!2sGondola%20Station%20-%20S.%20Sofia!5e0!3m2!1sru!2sfi!4v1761462389866!5m2!1sru!2sfi" 
+            width="600" 
+            height="450" 
+            style="border: 0px ; border-radius: 10px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+    </div>
+
+    <!-- Вторая секция: Текст слева, фото справа -->
+    <div class="content-row reverse" id="venice-image">
+        <div class="content-image">
+            <img src="venies\10.jpg" alt="venies10">
+        </div>
+        <div class="content-image">
+                <img src="venies/6.jpg" alt="venies6">
+        </div>
+    </div>
+
+    <!-- Третья секция: Фото слева, текст справа -->
+    <div class="content-row" id="venice-image">
+        <div class="content-image">
+                <video src="venies/vid3.mp4" controls autoplay muted loop 
+                style="width: 100%; border-radius: 10px;"></video>
+                
+        </div>
+        <div class="content-image">
+                <img src="venies/11.jpg" alt="venies11" >
+        </div>
+    </div>
+</body>
+</html>

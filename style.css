@@ -1,0 +1,451 @@
+/* GRUNDLÄGGANDE STILAR */
+
+body
+{
+    background-color: rgb(175, 206, 193);/* Ljusgrön bakgrund för hela webbplatsen */
+    margin: 0;/* Ta bort webbläsarens standardmarginaler */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* Enhetligt modernt typsnitt för hela webbplatsen */
+}
+
+/* NAVIGATIONSPANEL */
+nav {
+    background-color: rgb(60, 137, 196);/* Blå bakgrund för navigering */
+    overflow: visible;/* Tillåter rullgardinsmeny att gå utanför nav-gränserna */
+    width: 100vw;/* Bredd över hela skärmen (100% viewport width) */
+    margin: 0;/* Ta bort marginaler */
+    position: relative;/* För positionering av underordnade element */
+    height: 125px;/* Fast höjd på navigering */
+    z-index: 10000;/* Navigering alltid ovanpå alla element */
+}
+
+nav img {
+   position : absolute;/* Absolut positionering av logotyp */
+    top: 0;/* Fäst till toppen */
+    right: 0;/* Fäst till högerkanten */
+    margin: 10px 20px 0 0;/* Marginaler: 10px upptill, 20px till höger */
+    float: none;/* Inaktivera float */
+}
+
+nav ul li a {
+    display: block;/* Länkar som blockelement för full klickbarhet */
+    padding: 12px 24px;/* Inre marginaler: 12px topp/botten, 24px vänster/höger */
+    border-radius: 10px;/* Rundade hörn */
+    color: #ffffff;/* Vit textfärg */
+    text-decoration: none;/* Ta bort understrykning av länkar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* Typsnitt för länkar */
+    font-size: 20px;/* Länkarnas textstorlek */
+}
+
+nav ul a:hover {
+    background-color: aliceblue;/* Ljusblå bakgrund vid hovring */
+    color: black;/* Svart text vid hovring */
+    transition: background 0.2s;/* Mjuk övergång av bakgrund 0.2 sekunder */
+}
+
+nav ul {
+    margin: 0;/* Ta bort listans yttre marginaler */
+    padding: 0;/* Ta bort listans inre marginaler */
+    list-style: none;/* Ta bort listmarkörer */
+}
+
+/* HERO-SEKTION (Huvudbanner) */
+.hero{
+    background-color: rgb(25, 61, 89);/* Mörkblå bakgrund */
+    height: 300px;/* Sektionens höjd */
+    display: flex;/* Flexbox för centrering av innehåll */
+    justify-content: center;/* Centrering horisontellt */
+    align-items: center;/* Centrering vertikalt */
+    color: white;/* Vit textfärg */
+    text-align: center;/* Text centrerad */
+    padding: 20px;/* Inre marginaler */
+}
+
+.hero-content {
+    max-width: 800px;/* Maximal bredd på innehåll */
+    width: 100%;/* Tar hela tillgängliga bredden upp till max-width */
+}
+
+.hero h1 {
+    font-size: 3.5rem;/* Rubrikstorlek (3.5 x bastextstorlek) */
+    margin-bottom: 0.5rem;/* Marginal nedtill */
+    font-weight: 700;/* Fet stil */
+    margin-left: 0;/* Ta bort förskjutning till vänster */
+    margin-right: 50px; /* Ta bort förskjutning till höger (för centrering) */
+}
+
+.hero p {
+    font-size: 1.5rem;/* Underrubrikens storlek */
+    margin: 0;/* Ta bort marginaler */
+    color: white;/* Vit textfärg */
+    margin-left: 70px;/* Ta bort förskjutning till vänster */
+    margin-right: 70px; /* Ta bort förskjutning till höger (för centrering) */
+}
+
+/* ABOUT-SEKTION (Om projektet) */
+.about {
+    background-color: rgb(25, 61, 89);/* Mörkblå bakgrund */
+    min-height: 400px;/* Minimal höjd (kan öka) */
+    display: flex;/* Flexbox för centrering */
+    justify-content: center;/* Centrering horisontellt */
+    align-items: center;/* Centrering vertikalt */
+    color: white;/* Vit text */
+    text-align: center;/* Textjustering till centrum */
+    padding: 40px 20px;/* Marginaler: 40px topp/botten, 20px vänster/höger */
+}
+
+.about-content {
+    max-width: 800px;/* Maximal bredd på innehåll */
+    width: 100%;/* Tar hela tillgängliga bredden */
+}
+
+.about h2 {
+    font-size: 2.5rem;/* Rubrikstorlek */
+    margin-bottom: 1rem;/* Marginal nedtill */
+    font-weight: 700;/* Fet stil */
+    margin-left: 0;/* Ta bort förskjutning till vänster */
+    margin-right: 50px; /* Ta bort förskjutning till höger (för centrering) */
+}
+
+.about p {
+    font-size: 1.2rem;/* Textstorlek */
+    line-height: 1.6;/* Radavstånd för läsbarhet */
+    color: white;/* Vit textfärg */
+    margin: 0;/* Ta bort marginaler */
+}
+
+/* SCHACKBRÄDESPLACERING AV INNEHÅLL */
+.content-row {
+    display: flex;/* Flexbox för horisontell placering */
+    align-items: center;/* Justering av element till centrum vertikalt */
+    max-width: 1200px;/* Maximal bredd på behållare */
+    margin: 60px auto;/* Marginaler: 60px topp/botten, auto för centrering */
+    gap: 40px;/* Avstånd mellan foto och text */
+    padding: 0 20px;/* Marginaler på sidorna: 20px vänster/höger */
+}
+
+
+
+.content-image {
+    flex: 1;/* Tar 50% av tillgängligt utrymme */
+    min-width: 0;/* Tillåter element att krympa mindre än innehåll */
+}
+
+.content-image img {
+    width: 100%;/* Bilden tar hela behållarens bredd */
+    height: auto;/* Höjden beräknas automatiskt för att behålla proportioner */
+    border-radius: 10px;/* Rundade hörn */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);/* Skugga: 0 på X, 5px på Y, 15px oskärpa, 20% opacitet */
+    transition: transform 0.3s;/* Mjuk övergång av transformation i 0.3 sekunder */
+}
+
+.content-image img:hover {
+    transform: scale(1.05);/* Förstorar bilden med 5% vid hovring */
+}
+
+.content-text {
+    flex: 1;/* Tar 50% av tillgängligt utrymme */
+    padding: 20px;/* Inre marginaler */
+}
+
+.content-text h3 {
+    font-size: 2rem;/* Rubrikstorlek */
+    color: rgb(25, 61, 89);/* Mörkblå färg */
+    margin-bottom: 15px;/* Marginal nedtill */
+}
+
+.content-text p {
+    font-size: 1.1rem;/* Textstorlek */
+    line-height: 1.8;/* Radavstånd för bekväm läsning */
+    color: #2c3e50;/* Mörkgrå textfärg */
+    text-align: left;/* Justering till vänsterkant */
+    margin: 0 0 20px 0;/* Marginal endast nedtill 20px */
+    max-width: 100%;/* Tar hela tillgängliga bredden */
+}
+
+.read-more {
+    display: inline-block;/* Länk som inline-block för att tillämpa padding */
+    color: rgb(60, 137, 196);/* Blå länkfärg */
+    text-decoration: none;/* Ta bort understrykning */
+    font-weight: bold;/* Fet stil */
+    font-size: 1.1rem;/* Textstorlek */
+    transition: color 0.3s;/* Mjuk färgövergång i 0.3 sekunder */
+}
+
+.read-more:hover {
+    color: rgb(25, 61, 89);/* Mörkare blå vid hovring */
+}
+
+/* KNAPPAR */
+.btn {
+    display: inline-block;/* Knapp som inline-block */
+    padding: 12px 30px;/* Inre marginaler */
+    background: white;/* Vit bakgrund */
+    color: #445fdb;/* Blå text */
+    text-decoration: none;/* Ta bort understrykning */
+    border-radius: 5px;/* Rundade hörn */
+    font-weight: bold;/* Fet stil */
+    transition: transform 0.3s;/* Mjuk övergång av transformation */
+}
+
+/* LISTELEMENT I NAVIGERING */
+li {
+    float: left;/* Listelement placeras horisontellt */
+    list-style-type: none;/* Ta bort listmarkörer */
+    margin-right: 20px;/* Marginal till höger mellan element */
+    margin-top: 22px;/* Marginal upptill för vertikal justering */
+    position: relative;/* För positionering av underordnade element */
+}
+
+/* RULLGARDINSMENY */
+.dropdown {
+    position: relative;/* För positionering av rullgardinsmeny relativt detta element */
+    float: left;/* Placeras horisontellt */
+    list-style-type: none;/* Ta bort markörer */
+    margin-right: 20px;/* Marginal till höger */
+    margin-top: 22px;/* Marginal upptill */
+    z-index: 10000;/* Ovanpå alla element */
+}
+
+.dropdown-content {
+    display: none;/* Dold som standard */
+    position: absolute;/* Absolut positionering relativt .dropdown */
+    background-color: rgb(60, 137, 196); /* Blå bakgrund som navigering */
+    min-width: 200px;/* Minimal bredd på meny */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);/* Skugga för volym */
+    z-index: 9999;/* Hög z-index för visning ovanpå innehåll */
+    border-radius: 10px;/* Rundade hörn */
+    top: calc(100% - 5px);/* Positionering: 5px överlappning på föräldern (för mjuk musövergång) */
+    left: 0;/* Justering till förälderns vänsterkant */
+    padding: 15px 0 10px 0;/* Marginaler: 15px upptill (brygga), 10px nedtill */
+    margin-top: 0;/* Ta bort extra marginaler */
+}
+
+.dropdown-content a {
+    color: white !important;/* Vit textfärg (prioriterad regel) */
+    padding: 12px 16px !important;/* Inre marginaler */
+    text-decoration: none;/* Ta bort understrykning */
+    display: block;/* Varje länk på separat rad */
+    font-size: 18px;/* Typsnittsstorlek */
+    border-radius: 10px;/* Rundade hörn */
+    margin: 0 10px 5px 10px;/* Marginaler: ingen upptill, 10px på sidorna, 5px nedtill */
+}
+
+.dropdown-content a:hover {
+    background-color: aliceblue !important;/* Ljus bakgrund vid hovring */
+    color: black !important;/* Svart text vid hovring */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;/* Visa meny vid hovring över .dropdown */
+}
+
+.dropdown > a {
+    display: block;/* Länk som blockelement */
+    padding: 12px 24px;/* Inre marginaler */
+    border-radius: 10px;/* Rundade hörn */
+    color: #ffffff;/* Vit textfärg */
+    text-decoration: none;/* Ta bort understrykning */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* Typsnitt */
+    font-size: 20px;/* Typsnittsstorlek */
+    margin-bottom: 0;/* Ta bort nedre marginal för tätt anslutning till rullgardinsmeny */
+}
+
+/* ALLMÄNNA RUBRIKER */
+h1 {
+    clear: both;/* Rensa float-element */
+    margin-top: 40px;/* Marginal upptill */
+    margin-right: 200px;/* Marginal till höger */
+}
+
+/* ALLMÄNNA STYCKEN */
+p {
+    text-align: center;/* Centrering av text */
+    margin: 0 auto 30px;/* Marginaler: ingen upptill, auto vänster/höger (centrering), 30px nedtill */
+    max-width: 600px;/* Breddgräns för läsbarhet */
+    font-size: 16px;/* Typsnittsstorlek */
+    color: #2c3e50;/* Mörkgrå färg */
+}
+
+/* RESPONSIVITET FÖR OLIKA ENHETER */
+
+/* SURFPLATTOR (skärmar upp till 1024px) */
+@media (max-width: 1024px) {
+    nav {
+        height: auto;/* Automatisk höjd istället för fast (för radbrytning av element) */
+        padding: 15px 0;/* Vertikala marginaler */
+    }
+    
+    nav img {
+        width: 100px;/* Minska logotypens storlek */
+        height: auto;/* Höjd automatiskt för att behålla proportioner */
+    }
+    
+    .hero h1 {
+        font-size: 2.8rem;/* Minska rubrik för surfplattor */
+    }
+    
+    .hero p {
+        font-size: 1.3rem;/* Minska underrubrik */
+    }
+    
+    .about h2 {
+        font-size: 2rem;/* Minska About-rubrik */
+    }
+    
+    .about p {
+        font-size: 1.1rem;/* Minska About-text */
+    }
+    
+    .content-row {
+        gap: 30px;/* Minska avstånd mellan foto och text */
+    }
+}
+
+/* MOBILA ENHETER (skärmar upp till 768px) */
+@media (max-width: 768px) {
+    nav {
+        height: auto;/* Automatisk höjd */
+        padding: 10px 0;/* Vertikala marginaler */
+    }
+    
+    nav ul {
+        display: flex; /* Aktivera flexbox för meny */
+        flex-wrap: wrap;/* Tillåt element att brytas till ny rad */
+        justify-content: center;/* Centrera menyelement */
+        padding: 10px;/* Inre marginaler */
+    }
+    
+    li {
+        float: none; /* Inaktivera float (använd flexbox) */
+        margin: 5px 10px; /* Minska marginaler mellan element */
+    }
+    
+    .dropdown {
+        float: none;/* Inaktivera float */
+        margin: 5px 10px;/* Minska marginaler */
+    }
+    
+    nav ul li a {
+        padding: 10px 15px;/* Minska padding på navigationsknappar */
+        font-size: 16px;/* Minska typsnittsstorlek */
+    }
+    
+    nav img {
+        position: static;/* Ta bort absolut positionering */
+        display: block;/* Logotyp som blockelement */
+        margin: 10px auto;/* Centrera logotyp */
+        width: 80px;/* Ännu mindre storlek */
+        height: auto;/* Automatisk höjd */
+    }
+    
+    .hero {
+        height: auto;/* Automatisk höjd istället för fast */
+        min-height: 250px;/* Minimal höjd för innehåll */
+        padding: 30px 15px;/* Minska padding */
+    }
+    
+    .hero h1 {
+        font-size: 2rem;/* Minska rubrik för mobila */
+    }
+    
+    .hero p {
+        font-size: 1.1rem;/* Minska underrubrik */
+    }
+    
+    .about {
+        min-height: 300px;/* Minimal höjd för About-sektion */
+        padding: 30px 15px;/* Minska padding */
+    }
+    
+    .about h2 {
+        font-size: 1.8rem;/* Minska rubrik */
+    }
+    
+    .about p {
+        font-size: 1rem;/* Minska text */
+        padding: 0 10px;/* Lägg till sidoMarginaler */
+    }
+    
+    .content-row,
+    .content-row.reverse {
+        flex-direction: column;/* Växla till vertikal kolumn (foto ovanför text) */
+        margin: 30px auto;/* Minska vertikala marginaler */
+        gap: 20px;/* Minska avstånd mellan element */
+    }
+    
+    .content-text {
+        padding: 10px;/* Minska inre marginaler */
+    }
+    
+    .content-text h3 {
+        font-size: 1.5rem;/* Minska kortrubriker */
+    }
+    
+    .content-text p {
+        font-size: 1rem;/* Minska text */
+        text-align: center;/* Centrera text på mobila */
+    }
+    
+    .read-more {
+        font-size: 1rem;/* Minska länkstorlek */
+    }
+    
+    .dropdown-content {
+        min-width: 160px;/* Minska rullgardinsmenyn bredd */
+    }
+}
+
+/* SMÅ MOBILA ENHETER (skärmar upp till 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;/* Meny i vertikal kolumn */
+        align-items: center;/* Centrera element */
+    }
+    
+    li, .dropdown {
+        margin: 5px 0;/* Endast vertikala marginaler */
+        width: 100%;/* Element över hela bredden */
+        text-align: center;/* Centrera text */
+    }
+    
+    nav ul li a {
+        padding: 12px 20px;/* Öka padding för enklare klickbarhet */
+        font-size: 18px;/* Öka typsnitt för läsbarhet */
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;/* Ännu mindre rubrik */
+    }
+    
+    .hero p {
+        font-size: 1rem;/* Minska underrubrik */
+    }
+    
+    .about h2 {
+        font-size: 1.5rem;/* Minska About-rubrik */
+    }
+    
+    .about p {
+        font-size: 0.95rem;/* Minska text */
+    }
+    
+    .content-text h3 {
+        font-size: 1.3rem;/* Minska kortrubriker */
+    }
+    
+    .content-text p {
+        font-size: 0.95rem;/* Minska korttext */
+    }
+    
+    .content-row {
+        margin: 20px auto;/* Minimala vertikala marginaler */
+        padding: 0 10px;/* Minimala sidoMarginaler */
+    }
+    
+    .dropdown-content {
+        position: relative;/* Gör rullgardinsmeny till del av flödet (inte absolut) */
+        min-width: 100%;/* Över hela förälderns bredd */
+        left: auto;/* Återställ left */
+        top: auto;/* Återställ top */
+    }
+}

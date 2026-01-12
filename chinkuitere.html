@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href ="./home.html">
+-            <img src="it.svg" alt="logo" width="140" height="110">
+        </a>
+        <ul>
+            <li> <a href="./home.html">Home</a> </li>
+            <li> <a href="#home">About</a> </li>
+            <li> <a href="./contact.html">Contact</a> </li>
+            <li class="dropdown">
+                <a href="./home.html#venice-image">Gallery</a>
+                <div class="dropdown-content">
+                <a href="./home.html#venice-image">Venice</a>
+                <a href="./home.html#cinque-image">Cinque Terre</a>
+                <a href="./home.html#dolomites-image">Dolomites</a>
+        </ul>
+    </nav>
+
+    <section class ="hero" id="home">
+        <div class="hero-content">
+            <h1>Chinkuitere</h1>
+        </div>
+    </section>
+
+    <article class ="about" id="about">
+        <h2>About</h2>
+        <p>Cinque Terre, meaning “Five Lands,” is a string of five picturesque seaside villages perched on the rugged cliffs of the Italian Riviera. These colorful towns—Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore—are connected by scenic hiking trails and offer breathtaking views of the Mediterranean Sea.</p>
+    </article>
+
+    <!-- Первая секция: Фото слева, текст справа -->
+    <div class="content-row" id="chinkuitere-image">
+        <div class="content-image">
+                <img src="chinkuitere/1.jpg" alt="chinkuitere1">
+        </div>
+        <div class="content-image">
+                <img src="chinkuitere/2.jpg" alt="charsetter2">
+        </div>
+    </div>
+
+    <!-- Вторая секция: Текст слева, фото справа -->
+    <div class="content-row reverse" id="chinkuitere-image">
+        <div class="content-image">
+            <img src="chinkuitere/3.jpg" alt="chinkuitere3">
+        </div>
+        <div class="content-image">
+                <video src="chinkuitere/vid1.mp4" controls autoplay muted loop 
+                style="width: 100%; border-radius: 10px;"></video>
+        </div>
+    </div>
+
+    <!-- Третья секция: Фото слева, текст справа -->
+    <div class="content-row" id="chinkuitere-image">
+        <div class="content-image">
+                <video src="chinkuitere/vid2.mp4" controls autoplay muted loop 
+                style="width: 100%; border-radius: 10px;"></video>
+                
+        </div>
+        <div class="content-image">
+                <img src="chinkuitere/4.jpg" alt="chinkuitere4" >
+        </div>
+    </div>
+
+    <!-- четвёртая секция: Текст слева, фото справа -->
+    <div class="content-row reverse" id="chinkuitere-image">
+        <div class="content-image">
+            <img src="chinkuitere/5.jpg" alt="chinkuitere5">
+        </div>
+        <div class="content-image">
+                <img src="chinkuitere/6.jpg" alt="chinkuitere6">
+        </div>
+    </div>
+
+    <!-- пятая секция: Фото слева, текст справа -->
+    <div class="content-row" id="chinkuitere-image">
+        <div class="content-image">
+                <video src="chinkuitere/vid3.mp4" controls autoplay muted loop 
+                style="width: 100%; border-radius: 10px;"></video>
+                
+        </div>
+        <div class="content-image">
+                <img src="chinkuitere/7.jpg" alt="chinkuitere7" >
+        </div>
+    </div>
+
+    <!-- щесьая секция: Текст слева, фото справа -->
+    <div class="content-row reverse" id="chinkuitere-image">
+        <div class="content-image">
+         <div class="content-image">
+                <img src="chinkuitere/8.jpg" alt="chinkuitere8" >
+        </div>
+        </div>
+        <div class="content-image">
+                <video src="chinkuitere/vid4.mp4" controls autoplay muted loop 
+                style="width: 100%; border-radius: 10px;"></video>
+        </div>
+    </div>
+
+ <!-- седьмая секция: Фото слева, текст справа -->
+    <div class="content-row" id="chinkuitere-image">
+        <div class="content-image">
+                <video src="chinkuitere/vid5.mp4" controls autoplay muted loop 
+                style="width: 100%; border-radius: 10px;"></video>
+                
+        </div>
+        <div class="content-image">
+                <img src="chinkuitere/9.jpg" alt="chinkuitere9" >
+        </div>
+    </div>
+
+        <div class="content-row" id="venice-image">
+        <div class="content-image">
+                <img src="chinkuitere/10.jpg" alt="chinkuitere10">
+        </div>
+        <div class="content-text">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9637.398775247066!2d9.73833668412979!3d44.09953901630641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fa8971ac8b07%3A0x119e0fb487f86580!2zMTkwMTcg0KDQuNC-0LzQsNC00LbQvtGA0LUsINCh0L_QtdGG0LjRjywg0JjRgtCw0LvQuNGP!5e0!3m2!1sru!2sfi!4v1761474191086!5m2!1sru!2sfi"
+            width="600" 
+            height="450" 
+            style="border: 0px ; border-radius: 10px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+    </div>
+</body>
+</html>

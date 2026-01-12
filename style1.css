@@ -1,0 +1,266 @@
+/*ощий фон*/
+body
+{
+    background-color: rgb(175, 206, 193);
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*стили для навигационной панели*/
+nav {
+    background-color: rgb(60, 137, 196);
+    width: 100vw; 
+    margin: 0;
+    position: relative;
+    height: 125px;
+}
+/*стили для логотипа навигационной панели*/
+nav img {
+   position : absolute;
+    top: 0;
+    right: 0;
+    margin: 10px 20px 0 0;
+    float: none;
+}
+/* Стили для ссылок в навигационной панели */
+nav ul li a {
+    display: block;
+    padding: 12px 24px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+
+}
+/* Эффект наведения для ссылок в навигационной панели */
+nav ul a:hover {
+    background-color: aliceblue;
+    color: black;
+    transition: background 0.2s;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* Стили для элементов списка навигации */
+.hero{
+    background-color: rgb(25, 61, 89);
+    height: 200px; /* ✅ ИЗМЕНЕНО: 200px → 300px для видимости обеих надписей */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px; /* ✅ ДОБАВЛЕНО: отступы для мобильных устройств */
+}
+
+.hero-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 3.5rem; /* ✅ ИЗМЕНЕНО: немного увеличен */
+    margin-bottom: 0.5rem; /* ✅ ИЗМЕНЕНО: уменьшен отступ снизу */
+    font-weight: 700;
+    margin: auto;
+}
+
+.hero p {
+    font-size: 1.5rem; /* ✅ ИЗМЕНЕНО: увеличен с 1.2rem */
+    margin: auto; /* ✅ ИЗМЕНЕНО: убраны лишние отступы */
+    color: white;
+}
+
+.about {
+    background-color: rgb(25, 61, 89);
+    height: 500px; /* ✅ ИЗМЕНЕНО: 200px → 300px для видимости обеих надписей */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.about-content {
+    max-width: 800px;
+    width: 100%;
+}
+
+.about h2 {
+    font-size: 2.5rem; /* ✅ ИЗМЕНЕНО: немного увеличен */
+    margin-bottom: 0.5rem; /* ✅ ИЗМЕНЕНО: уменьшен отступ снизу */
+    font-weight: 700;
+    margin: auto;
+}
+
+.about p {
+    font-size: 1.5rem; /* ✅ ИЗМЕНЕНО: увеличен с 1.2rem */
+    margin: auto; /* ✅ ИЗМЕНЕНО: убраны лишние отступы */
+    color: white;
+}
+
+.content-row {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 60px auto;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.content-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.content-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.content-image img:hover {
+    transform: scale(1.05);
+}
+
+.content-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-text h3 {
+    font-size: 2rem;
+    color: rgb(25, 61, 89);
+    margin-bottom: 15px;
+}
+
+.content-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2c3e50;
+    text-align: left;
+    margin: 0 0 20px 0;
+    max-width: 100%;
+}
+
+.read-more {
+    display: inline-block;
+    color: rgb(60, 137, 196);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: rgb(25, 61, 89);
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .content-row,
+    .content-row.reverse {
+        flex-direction: column;
+    }
+    
+    .content-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .content-text p {
+        font-size: 1rem;
+    }
+}
+
+/* Стили для кнопок */
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: white;
+    color: #445fdb;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+li {
+    float: left;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-top: 22px;
+}
+/* ✅ Выпадающее меню */
+.dropdown {
+    position: relative;
+    float: left;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-top: 22px;
+    z-index: 10000; /* ✅ ДОБАВЛЕНО: z-index для родительского элемента */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(60, 137, 196);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 9999;
+    border-radius: 10px;
+    top: calc(100% - 5px); /* ✅ ИСПРАВЛЕНО: меню накладывается на родителя для плавного перехода */
+    left: 0;
+    padding: 15px 0 10px 0; /* ✅ ИЗМЕНЕНО: увеличен верхний padding для "мостика" */
+    margin-top: 0;
+}
+
+.dropdown-content a {
+    color: white !important;
+    padding: 12px 16px !important;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 0 10px 5px 10px; /* ✅ ИЗМЕНЕНО: убран верхний отступ у первого элемента */
+}
+
+.dropdown-content a:hover {
+    background-color: aliceblue !important;
+    color: black !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown > a {
+    display: block;
+    padding: 12px 24px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-bottom: 0; /* ✅ ДОБАВЛЕНО: убираем нижний отступ */
+}
+/* Стили для заголовка */
+h1 {
+
+    clear: both;
+    margin-top: 40px;
+    margin-right: 200px;
+}
+
+p {
+    text-align: center; /* выравнивание по центру */
+    margin: 0 auto 30px; /* убираем верхний отступ, добавляем нижний */
+    max-width: 600px; /* ограничиваем ширину под размер изображений */
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+

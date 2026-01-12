@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <!-- === SIDANS METADATA === -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- KRITISKT VIKTIGT: viewport-inställning för responsivitet på mobila enheter -->
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css"><!-- Länkning av extern CSS-stilfil -->
+</head>
+<body>
+    <!-- NAVIGATIONSPANEL -->
+    <nav><!-- Semantisk tagg för webbplatsens navigation -->
+         <!-- Logotyp med länk till startsidan -->
+        <a href ="./home.html"> <!-- Länk till startsidan -->
+-            <img src="it.svg" alt="logo" width="140" height="110"><!-- Webbplatsens logotyp, alt för tillgänglighet -->
+        </a>
+         <!-- Navigeringsmeny -->
+        <ul>
+            <li> <a href="./home.html">Home</a> </li> <!-- Menypunkt: Hem -->
+            <li> <a href="#home">About</a> </li> <!-- Menypunkt: Om projektet (ankarlänk till sektion #about) -->
+            <li> <a href="./contact.html">Contact</a> </li><!-- Menypunkt: Kontakt -->
+            <!-- Rullgardinsmeny Gallery -->
+            <li class="dropdown"><!-- Listelement med klass dropdown för rullgardinsmeny -->
+                <a href="./home.html#venice-image">Gallery</a><!-- Huvudlänk Gallery -->
+                <div class="dropdown-content"><!-- Behållare för rullgardinsmenyn -->
+                <a href="#venice-image">Venice</a><!-- Länk till Venice-sektion -->
+                <a href="#cinque-image">Cinque Terre</a><!-- Länk till Cinque Terre-sektion -->
+                <a href="#dolomites-image">Dolomites</a><!-- Länk till Dolomites-sektion -->
+        </ul>
+    </nav>
+        <!-- HERO-SEKTION (Huvudbanner) -->
+    <section class ="hero" id="home"><!-- Hero-sektion med id="home" för ankarlänk -->
+        <div class="hero-content"><!-- Behållare för hero-innehåll -->
+            <h1>Northern Italy</h1><!-- Sidans huvudrubrik -->
+            <p>A small paradise.</p><!-- Underrubrik med beskrivning -->
+        </div>
+    </section>
+        <!-- ABOUT-SEKTION (Om projektet) -->
+
+    <article class ="about" id="about">
+        <h2>About</h2>
+        <p>Welcome to our page dedicated to the beauty and culture of Italy. 
+    Here, we explore some of the country’s most iconic places — from the romantic canals of Venice to the colorful seaside villages of Cinque Terre and the majestic peaks of the Dolomites. 
+    Each destination tells a story of history, art, and breathtaking landscapes that make Italy one of the most inspiring countries in the world.</p>
+    </article>
+         <!-- SCHACKBRÄDESPLACERING AV INNEHÅLL
+         Foto och text alternerar vänster/höger -->
+         <!-- === FÖRSTA SEKTIONEN: Venice === -->
+        <!-- Placering: Foto till vänster, text till höger -->
+    <div class="content-row" id="venice-image"><!-- Behållare för schackbrädesplacering, id för ankarlänk -->
+        <!-- Block med bild -->
+        <div class="content-image"><!-- Behållare för bild (tar 50% av bredden) -->
+            <a href="./venies.html"> <!-- Länk till separat Venice-sida -->
+                <img src="venies\titul.jpg" alt="Venice"><!-- Bild av Venedig, alt för tillgänglighet -->
+            </a>
+        </div>
+        <!-- Block med text -->
+        <div class="content-text"><!-- Behållare för text (tar 50% av bredden) -->
+            <h3>Venice</h3>
+            <p>Venice, the capital of northern Italy's Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea. Known for its beautiful canals, historic architecture, and romantic gondola rides, Venice is one of the most unique cities in the world.</p>
+            <a href="./venies.html" class="read-more">Read more →</a><!-- Länk "Läs mer" med pil -->
+        </div>
+    </div>
+
+    <!-- === ANDRA SEKTIONEN: Cinque Terre === -->
+    <!-- Placering: Text till vänster, foto till höger (reverse) -->
+    <div class="content-row reverse" id="cinque-image">
+        <div class="content-text">
+            <h3>Cinque Terre</h3>
+            <p>Cinque Terre is a string of centuries-old seaside villages on the rugged Italian Riviera coastline. In each of the 5 towns, colorful houses and vineyards cling to steep terraces, harbors are filled with fishing boats and trattorias turn out seafood specialties.</p>
+            <a href="./chinkuitere.html" class="read-more">Read more →</a>
+        </div>
+        <div class="content-image">
+            <a href="./chinkuitere.html">
+                <img src="chinkuitere\tit.jpg" alt="Cinque Terre">
+            </a>
+        </div>
+    </div>
+
+    <!-- === TREDJE SEKTIONEN: Dolomites === -->
+    <!-- Placering: Foto till vänster, text till höger -->
+    <div class="content-row" id="dolomites-image">
+        <div class="content-image">
+            <a href="./dolomites.html">
+                <img src="dolomites\titit.jpg" alt="Dolomites">
+            </a>
+        </div>
+        <div class="content-text">
+            <h3>Dolomites</h3>
+            <p>The Dolomites are a mountain range located in northeastern Italy. They form part of the Southern Limestone Alps and extend from the River Adige in the west to the Piave Valley in the east. Known for their distinctive shape and pale color, they were declared a UNESCO World Heritage Site.</p>
+            <a href="./dolomites.html" class="read-more">Read more →</a>
+        </div>
+    </div>
+   
+
+</body>
+</html>

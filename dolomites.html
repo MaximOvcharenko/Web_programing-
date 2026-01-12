@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href ="./home.html">
+-            <img src="it.svg" alt="logo" width="140" height="110">
+        </a>
+        <ul>
+            <li> <a href="./home.html">Home</a> </li>
+            <li> <a href="#home">About</a> </li>
+            <li> <a href="./contact.html">Contact</a> </li>
+            <li class="dropdown">
+                <a href="./home.html#venice-image">Gallery</a>
+                <div class="dropdown-content">
+                <a href="./home.html#venice-image">Venice</a>
+                <a href="./home.html#cinque-image">Cinque Terre</a>
+                <a href="./home.html#dolomites-image">Dolomites</a>
+        </ul>
+    </nav>
+
+    <section class ="hero" id="home">
+        <div class="hero-content">
+            <h1>Dolomites</h1>
+        </div>
+    </section>
+
+    <article class ="about" id="about">
+        <h2>About</h2>
+        <p>The Dolomites are one of the most stunning mountain ranges in the world, located in northern Italy. Known for their dramatic peaks and pink-hued limestone cliffs, they offer a breathtaking landscape that changes color with the light of the day.</p>
+    </article>
+
+ <!-- Первая секция: Фото слева, текст справа -->
+    <div class="content-row" id="dolomites-image">
+        <div class="content-image">
+                <img src="dolomites/1.jpg" alt="dolomites1">
+        </div>
+        <div class="content-image">
+                <img src="dolomites/3.jpg" alt="dolomites3">
+        </div>
+    </div>
+
+    <!-- Вторая секция: Текст слева, фото справа -->
+    <div class="content-row reverse" id="dolomites-image">
+        <div class="content-image">
+            <img src="dolomites/5.jpg" alt="dolomites5">
+        </div>
+        <div class="content-image">
+                <img src="dolomites/6.jpg" alt="dolomites6">
+        </div>
+    </div>
+
+    <!-- Третья секция: Фото слева, текст справа -->
+    <div class="content-row" id="dolomites-image">
+        <div class="content-image">
+                <video src="dolomites/vid3.mp4" controls autoplay muted loop 
+                style="width: 100%; border-radius: 10px;"></video>
+                
+        </div>
+        <div class="content-image">
+                <img src="dolomites/7.jpg" alt="dolomites7" >
+        </div>
+    </div>
+
+    <!-- четвёртая секция: Текст слева, фото справа -->
+    <div class="content-row reverse" id="dolomites-image">
+        <div class="content-image">
+            <img src="dolomites/9.jpg" alt="dolomites9">
+        </div>
+        <div class="content-image">
+                <img src="dolomites/11.jpg" alt="dolomites11">
+        </div>
+    </div>
+
+    <!-- пятая секция: Фото слева, текст справа -->
+    <div class="content-row" id="dolomites-image">
+        <div class="content-image">
+                <video src="dolomites/vid1.mp4" controls autoplay muted loop 
+                style="width: 100%; border-radius: 10px;"></video>
+                
+        </div>
+        <div class="content-image">
+                <img src="dolomites/12.jpg" alt="dolomites13" >
+        </div>
+    </div>
+
+    <!-- щесьая секция: Текст слева, фото справа -->
+    <div class="content-row reverse" id="dolomites-image">
+        <div class="content-image">
+        
+        </div>
+        <div class="content-image">
+                <img src="dolomites/14.jpg" alt="dolomites14">
+        </div>
+    </div>
+</body>
+</html>
